@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-       <link rel="stylesheet" href="style.css" /> 
-    </head>
-    <body>
-        <section>
-            <div class="container">
-                <div id="display"></div>
-                <div class="buttons">
-                    <div class="button">C</div>
-                    <div class="button">/</div>
-                    <div class="button">*</div>
-                    <div class="button">&larr</div>
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                    <div class="button">-</div>
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                    <div class="button">+</div>
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">.</div>
-                    <div class="button">(</div>
-                    <div class="button">0</div>
-                    <div class="button">)</div>
-                    <div id="equal" class="button">=</div>
-                </div>
-            </div>
+<html lang="eng">  
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatilbe" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main  class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
         </section>
-       <script src="index.js"></script> 
-    </body>
+        <section class="display">
+            Player <span class="display-player player">X</span>'s turn' <!--aqui eu vou alterar sempre que mudar a vez do jogador--> 
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section> <!--aqui eu anunciar o vencedor. começa vazio mas depois alteramos via javascript--> 
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+</body>
 </html>
